@@ -9,7 +9,7 @@ export  const navItems = [
     },
     {
         title: "Best Sellers",
-        link: "/"
+        link: "/best-seller"
     },
     {
         "title": "Reviews",
