@@ -8,8 +8,8 @@ export default function Header() {
   const [activeTab, setActiveTab] = useState("launch");
 
   return (
-    <div className="flex justify-between items-center w-full p-4">
-      <div className="flex space-x-2">
+    <div className="flex md:justify-between flex-col md:flex-row gap-6 items-center w-full p-4">
+      <div className="flex  md:space-x-2 space-x-6">
         <Link
           href={"/extra-account-promo"}
           onClick={() => setActiveTab("launch")}

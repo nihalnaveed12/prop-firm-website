@@ -34,7 +34,7 @@ export const PropFirmTabs: React.FC<PropFirmTabsProps> = ({
       onValueChange={(value) => setActiveTab(value as TabOption)}
     >
       {/* Main Navigation Tabs */}
-      <div className="flex justify-center py-8">
+      <div className="flex justify-center ">
         <TabsList className="gap-2 md:gap-4 p-1 rounded-full flex-wrap">
           {["Firms", "Challenges", "Offers", "Reviews"].map((tab, index) => (
             <TabsTrigger
