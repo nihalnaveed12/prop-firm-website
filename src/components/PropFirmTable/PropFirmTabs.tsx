@@ -5,6 +5,7 @@ import { PropFirm } from "@/types/propFirm";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { FirmFilterBar } from "./FirmFilterBar";
 import { FirmTable } from "./FirmTable";
+import Offers from "../offers";
 
 type TabOption = "Firms" | "Challenges" | "Offers" | "Reviews";
 type FilterOption = "Popular" | "Favorite" | "New" | "All";
@@ -65,12 +66,7 @@ export const PropFirmTabs: React.FC<PropFirmTabsProps> = ({
       </TabsContent>
 
       <TabsContent value="Offers" className="mt-2">
-        <div className="p-8 bg-[#1b1a1b] rounded-lg text-center">
-          <h3 className="text-xl font-bold mb-3">Offers Section</h3>
-          <p className="text-gray-300">
-            This section will display special offers from prop firms.
-          </p>
-        </div>
+        <Offers />
       </TabsContent>
 
       <TabsContent value="Reviews" className="mt-2">
